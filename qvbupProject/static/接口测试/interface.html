@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="div_click" style="width: 100px;height: 100px;background: red">
+
+</div>
+<script src="jquery-2.1.0.js"></script>
+<script>
+  var starname="齐齐哈尔";
+  var arrayname="哈尔滨";
+   var startdata='2017-08-02';
+  $(".div_click").click(function () {
+    $.ajax({
+      url:'https://www.qvbus.com/api/v2/contacts/getlines',
+      data:{"starname": starname, "arrayname": arrayname, "startdata": startdata},
+      dataType:'jsonp',
+      method:'get',
+      success:function (res) {
+        console.log(res)
+      }
+    })
+  })
+</script>
+</body>
+</html>
