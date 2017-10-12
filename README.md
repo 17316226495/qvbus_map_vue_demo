@@ -14,6 +14,7 @@ qvbus项目 新加加 高德地图功能
 	npm install sass-loader
 	npm install node-sass
 	npm install vue-amap
+	npm run dev
 ## 结构分部
 	|-- build                              // webpack配置文件
   	|-- config                             // 项目打包路径
